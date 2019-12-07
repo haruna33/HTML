@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .w {
+            width: 900px; /*版心*/
+            margin: auto;
+            height: 70px;
+
+        }
+
+        .header {
+
+            height: 80px;
+            background-color: purple;
+        }
+
+        .logo {
+            float: left;
+            height: 70px;
+            line-height: 140px;
+            width: 40px;
+        }
+
+        /*插入图片时需定义 图片盒子大小 否则会占据大量空间影响排列*/
+
+        .nav {
+            float: right;
+        }
+
+        .nav li {
+            float: left;
+        }
+
+        .nav ul li a {
+
+            font-family: "Son   gti SC", serif;
+            color: white;
+            display: block;
+            font-size: 14px;
+            text-decoration: none;
+            height: 70px;
+            line-height: 130px;
+            margin-right: 28px; /*设置28px的元素间距*/
+            /*padding: 0 10px;padding会撑大整个盒子 连带底边框*/
+        }
+
+        .nav ul li a:hover {
+            border-bottom: solid 2px white;
+        }
+
+        .github {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            left: 1310px;
+            top: 46px; /*强定位github icon*/
+        }
+
+        .search {
+            float: left;
+            height: 70px;
+            margin: 35px 120px;
+
+
+        }
+
+        .search input {
+            color: #ccc;
+
+            height: 20px;
+            float: left;
+            width: 340px;
+            padding-left: 20px;
+            border: lightpink 1px solid;
+            border-right: none;
+
+        }
+
+        .search button {
+            float: left;
+            height: 22px;
+            font-family: "Songti SC";
+        }
+
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 526px;
+            background: url("banner-bg.jpg") ;
+            background-size: cover;
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="w">
+        <div class="logo">
+            <img src="maki.png" alt="" width="100%" height="70%">
+        </div>
+        <div class="search">
+            <input type="text" value="maki kawaii">
+            <button>search</button>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">文章</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">关于</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="github">
+        <a href="github.com"><img src="icon-github.png"></a>
+    </div>
+</div>
+<div class="banner">
+
+</div>
+
+</body>
+</html>
